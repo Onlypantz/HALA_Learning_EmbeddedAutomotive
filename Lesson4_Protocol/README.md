@@ -14,7 +14,7 @@ Số dây: 4 dây
 + SCLK - Serial clock
 + CS/SS - Chip Select
 
-![Spi_diagram.png]
+![Spi_diagram.png](https://github.com/Onlypantz/HALA_Learning_EmbeddedAutomotive/blob/main/Lesson4_Protocol/Spi_diagram.png)
 
 Direction: Full duplex, Half duplex.
 
@@ -58,7 +58,7 @@ Số dây: 2 dây
 + SCL - Serial clock line.
 + SDA - Serial Data line.
 
-![I2C_diagram.png]
+![I2C_diagram.png](https://github.com/Onlypantz/HALA_Learning_EmbeddedAutomotive/blob/main/Lesson4_Protocol/I2C_diagram.png)
 
 Direction: Half duplex.
 
@@ -87,7 +87,7 @@ Data được lấy khi SCL ở HIGH. Data chỉ có thể được thay đổi 
 
 Các I2C device giao tiếp với nhau thông qua các Messages. Mỗi Message gồm các frame sau:
 
-![I2C_Message.png]
+![I2C_Message.png](https://github.com/Onlypantz/HALA_Learning_EmbeddedAutomotive/blob/main/Lesson4_Protocol/I2C_Message.png)
 
 + Start bit (1 bit): tạo ra bằng cách kéo SDA xuống LOW, sau đó kéo SCL xuống LOW.
 + Address bits (7 hoặc 10 bits): được cấu hình trước ở thanh ghi. Master truyền Address bits đến tất cả các Slaves. Các Slaves nhận và phản hồi master bằng ACK/NACK. Các Slaves so sánh Address bits mà Master truyền với Address bản thân, nếu giống thì bắt đầu thực hiện request từ Master (R/W bit).
@@ -124,7 +124,7 @@ Số dây: 3 dây
 + Rx - Receive.
 + GND - Ground.
 
-![UART_diagram.png]
+![UART_diagram.png](https://github.com/Onlypantz/HALA_Learning_EmbeddedAutomotive/blob/main/Lesson4_Protocol/UART_diagram.png)
 
 Direction: Full duplex, Half duplex, Simplex.
 
@@ -142,7 +142,7 @@ Dựa vào Baundrate được cấu hình, ta có thể lấy được Data tron
 
 UART devices giao tiếp với nhau theo chuẩn các UART frame. Mỗi frame bao gồm:
 
-![UART_frame.png]
+![UART_frame.png](https://github.com/Onlypantz/HALA_Learning_EmbeddedAutomotive/blob/main/Lesson4_Protocol/UART_frame.png)
 
 + Ở idle, UART bus được kéo lên HIGH.
 + Start bit (1 bit): tạo ra bằng cách kéo line xuống LOW.
